@@ -29,7 +29,7 @@ clean-all: $(CLEAN_MODULES)
 
 # Information for retrieving dependencies
 
-DOWNLOAD=wget --retry-connrefused --waitretry=1 --read-timeout=20 --timeout=15 --tries=5 --continue
+DOWNLOAD=wget --no-check-certificate --retry-connrefused --waitretry=1 --read-timeout=20 --timeout=15 --tries=5 --continue
 
 LLVM_GCC_URL=http://llvm.org/releases/2.9/llvm-gcc4.2-2.9-x86_64-linux.tar.bz2
 LLVM_GCC_ARCHIVE=llvm-gcc4.2-2.9-x86_64-linux.tar.bz2
